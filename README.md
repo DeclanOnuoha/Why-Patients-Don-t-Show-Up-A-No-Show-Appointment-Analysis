@@ -1,12 +1,12 @@
-# Why Patients Don't Show-Up: A No-Show Appointment Analysis
+# Why Patients Don't Show Up: A No-Show Appointment Analysis
 ![Picture of a doctor with a patient](hospital.jpg)
 ## 1. INTRODUCTION
-This project analyzes a real-world dataset originating from Brazil, which contains records of over 110,000 individual medical appointments. The dataset is designed to examine patient attendance behavior, specifically focusing on identifying the factors that influence whether or not a patient honors their scheduled medical appointment. Each record corresponds to a single appointment and includes a range of attributes that could potentially affect attendance outcomes. These features span both categorical and numerical types, such as patient age, gender, neighborhood, and the presence of underlying health conditions like hypertension, diabetes, and alcoholism. Additionally, the data captures whether the patient received a reminder via SMS and if they are enrolled in a social welfare program (scholarship).
+This project analyses a real-world dataset originating from Brazil, which contains records of over 110,000 individual medical appointments. The dataset is designed to examine patient attendance behaviour, specifically focusing on identifying the factors that influence whether or not a patient honours their scheduled medical appointment. Each record corresponds to a single appointment and includes a range of attributes that could potentially affect attendance outcomes. These features span both categorical and numerical types, such as patient age, gender, neighbourhood, and the presence of underlying health conditions like hypertension, diabetes, and alcoholism. Additionally, the data captures whether the patient received a reminder via SMS and if they are enrolled in a social welfare program (scholarship).
 The primary variable of interest, labeled "No-show", serves as the target outcome. It indicates patient attendance status—where a value of "No" signifies that the patient was present for the appointment, and "Yes" indicates a missed appointment.
-By exploring these variables, the project seeks to uncover actionable insights that can help healthcare providers reduce no-show rates, optimize resource allocation, and ultimately enhance the efficiency and reliability of healthcare delivery systems. Understanding what influences patient no-shows can help improve healthcare delivery and resource planning.
+By exploring these variables, the project seeks to uncover actionable insights that can help healthcare providers reduce no-show rates, optimise resource allocation, and ultimately enhance the efficiency and reliability of healthcare delivery systems. Understanding what influences patient no-shows can help improve healthcare delivery and resource planning.
 
 ## 2. GOALS
-By analyzing the patterns and relationships among these features, this project aims to uncover meaningful insights into what contributes to patient no-shows. These insights could help healthcare providers improve scheduling strategies, reduce missed appointments, and enhance overall patient care.
+By analysing the patterns and relationships among these features, this project aims to uncover meaningful insights into what contributes to patient no-shows. These insights could help healthcare providers improve scheduling strategies, reduce missed appointments, and enhance overall patient care.
 
 ## 3. KEY QUESTIONS
 - How many patients miss their appointments?
@@ -27,29 +27,29 @@ The data was sourced from Kaggle: **[Medical Appointment No Shows](https://www.k
 - `Age`: Patient age.
 - `Neighbourhood`: Location of the clinic.
 - `Scholarship`: Indicates enrollment in welfare programs.
-- `Hypertension`, `Diabetes`, `Alcoholism`, `Handcap`: Medical conditions.
+- `Hypertension`, `Diabetes`, `Alcoholism`, `Handicap`: Medical conditions.
 - `SMS_received`: Whether a reminder SMS was sent.
 - `No-show`: Whether the patient missed the appointment.
 
 ### Cleaning Steps:
 - Handling missing values
-- Removin duplicates
+- Removing duplicates
 - Parsed date columns and calculated waiting days.
-- Normalized column names (e.g., typo in `Handcap`).
+- Normalised column names (e.g., typo in `Handcap`).
 - Converted "No-show" values to boolean (`Yes` → 1, `No` → 0).
 - Removed invalid ages (e.g., negative values).
 
 ## 5. EXPLORATORY DATA ANALYSIS (EDA)
-- Analyzed distributions of age, gender, medical conditions, and SMS reminders.
+- Analysed distributions of age, gender, medical conditions, and SMS reminders.
 - Plotted no-show rates by demographic and medical factors.
 - Investigated temporal patterns (day of week, waiting time).
-- Grouped neighborhoods by highest/lowest no-show rates.
+- Grouped neighbourhoods by highest/lowest no-show rates.
 
 ### Age Distribution of Patients
 
 <img src="Age distribution.png" alt="Age distribution" width="875" height="600">
 
-#### The histogram of age distribution shows that most patients are younger, with a 'radual decline in frequency as age increases. This suggests that younger individuals are more likely to seek medical appointments.
+#### The histogram of age distribution shows that most patients are younger, with a radial decline in frequency as age increases. This suggests that younger individuals are more likely to seek medical appointments.
 
 ### Distribution of the 'No-show
 
@@ -68,11 +68,11 @@ The data was sourced from Kaggle: **[Medical Appointment No Shows](https://www.k
 
 <img src="No show by gender.png" alt="No show by gender" width="875" height="600">
 
-#### The plot below illustrates the distribution of no-shows categorized by gender.
+#### The plot below illustrates the distribution of no-shows categorised by gender.
 #### The majority of patients who showed up for their appointments are female, while a significant number of males also attended. Among those who did not show up, the proportion of females is slightly higher than that of males. The no-show rates are slightly higher for males compared to females, with around 20% of males and 19% of females not attending their appointments. ####
 
 ### Impact of Health conditions on no show rates - diabetes and Hypertension
-<img src="diabetes no show.png" alt="diabetes no show " width="875" height="600">
+<img src="diabetes no show.png" alt=" diabetes no show " width="875" height="600">
 
 ### Hypertension and No-Show
 
@@ -86,11 +86,11 @@ The data was sourced from Kaggle: **[Medical Appointment No Shows](https://www.k
 
 #### Patients who do not receive a scholarship have a higher no-show rate (approximately 20%) compared to those who do (around 24%). This suggests that financial support may play a role in appointment attendance.
 
-### Relationship between Neighborhood and No-show
+### Relationship between Neighbourhood and No-show
 
 <img src="Neighbourhood.png" alt="Neighbourhood" width="875" height="600">
 
-#### Certain neighborhoods show higher no-show rates compared to others. This variation may indicate socioeconomic factors or accessibility issues affecting attendance in specific areas.
+#### Certain neighbourhoods show higher no-show rates compared to others. This variation may indicate socioeconomic factors or accessibility issues affecting attendance in specific areas.
 
 
 ### Impact of SMS reminders on no-show rates
@@ -104,14 +104,14 @@ The data was sourced from Kaggle: **[Medical Appointment No Shows](https://www.k
 - Patients with **hypertension or diabetes** were **more likely** to show up.
 - Patients who do not receive a scholarship have a higher no-show rate (approximately 20%) compared to those who do (around 24%). This suggests that financial support may play a role in appointment attendance.
 - **Receiving an SMS** slightly improved show-up probability.
-- Some neighborhoods had significantly **higher no-show rates**, possibly due to socioeconomic differences.
+- Some neighbourhoods had significantly **higher no-show rates**, possibly due to socioeconomic differences.
 - **Shorter waiting time** between scheduling and appointment increased attendance.
 - **Younger patients** and those without chronic illnesses had higher no-show rates.
 
 ## 7. LIMITATION
 - No data on reasons for missing appointments (e.g., emergencies, transportation).
-- "No-show" column is labeled counter-intuitively (`No` = Showed up).
-- The dataset is limited to one region in Brazil and may not generalize globally.
+- "No-show" column is labelled counter-intuitively (`No` = Showed up).
+- The dataset is limited to one region in Brazil and may not generalise globally.
 - Potential biases in data collection or unrecorded factors (e.g., weather, clinic capacity).
 
 ## 8. RECOMMENDATIONS
@@ -121,7 +121,7 @@ The data was sourced from Kaggle: **[Medical Appointment No Shows](https://www.k
 - Consider **telemedicine or mobile health** options for patients with accessibility issues.
 
 ## 9. CONCLUSION
-This analysis revealed several meaningful patterns in medical appointment behavior. It shows that factors such as SMS reminders, waiting time, age, and medical history can influence attendance. These findings can guide interventions to reduce no-shows and improve healthcare delivery.
+This analysis revealed several meaningful patterns in medical appointment behaviour. It shows that factors such as SMS reminders, waiting time, age, and medical history can influence attendance. These findings can guide interventions to reduce no-shows and improve healthcare delivery.
 
 ## 10. NEXT STEPS
 - Build a **predictive model** to identify patients at high risk of missing appointments.
