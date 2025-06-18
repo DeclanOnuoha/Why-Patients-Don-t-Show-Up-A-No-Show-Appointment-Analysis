@@ -17,7 +17,7 @@ By analyzing the patterns and relationships among these features, this project a
 - Does the number of days between booking and the appointment matter?
 - Do text message reminders help patients show up?
 
-## DATA COLLECTION AND PROCESSING
+## 4. DATA COLLECTION AND PROCESSING
 The data was sourced from Kaggle: **[Medical Appointment No Shows](https://www.kaggle.com/datasets/joniarroba/noshowappointments)**.
 
 ### Columns Overview:
@@ -39,7 +39,11 @@ The data was sourced from Kaggle: **[Medical Appointment No Shows](https://www.k
 - Converted "No-show" values to boolean (`Yes` → 1, `No` → 0).
 - Removed invalid ages (e.g., negative values).
 
-## 4. EXPLORATORY DATA ANALYSIS (EDA)
+## 5. EXPLORATORY DATA ANALYSIS (EDA)
+### Age Distribution of Patients
+<img src="Age distribution.png" alt="Age distribution" width="850" height="600">
+#### The histogram of age distribution shows that most patients are younger, with a gradual decline in frequency as age increases. This suggests that younger individuals are more likely to seek medical appointments.
+
 - Analyzed distributions of age, gender, medical conditions, and SMS reminders.
 - Plotted no-show rates by demographic and medical factors.
 - Investigated temporal patterns (day of week, waiting time).
