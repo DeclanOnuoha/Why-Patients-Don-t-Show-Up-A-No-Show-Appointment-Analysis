@@ -1,5 +1,5 @@
 # Why Patients Don't Show-Up: A No-Show Appointment Diagnostic Analysis
-
+![Picture of a doctor with a patient](hospital.jpg)
 ## 1. INTRODUCTION
 This project analyzes a real-world dataset originating from Brazil, which contains records of over 110,000 individual medical appointments. The dataset is designed to examine patient attendance behavior, specifically focusing on identifying the factors that influence whether or not a patient honors their scheduled medical appointment. Each record corresponds to a single appointment and includes a range of attributes that could potentially affect attendance outcomes. These features span both categorical and numerical types, such as patient age, gender, neighborhood, and the presence of underlying health conditions like hypertension, diabetes, and alcoholism. Additionally, the data captures whether the patient received a reminder via SMS and if they are enrolled in a social welfare program (scholarship).
 The primary variable of interest, labeled "No-show", serves as the target outcome. It indicates patient attendance status—where a value of "No" signifies that the patient was present for the appointment, and "Yes" indicates a missed appointment.
