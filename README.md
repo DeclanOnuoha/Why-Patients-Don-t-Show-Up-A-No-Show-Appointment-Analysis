@@ -8,14 +8,16 @@ By exploring these variables, the project seeks to uncover actionable insights t
 ## 2. GOALS
 By analyzing the patterns and relationships among these features, this project aims to uncover meaningful insights into what contributes to patient no-shows. These insights could help healthcare providers improve scheduling strategies, reduce missed appointments, and enhance overall patient care.
 
-## ❓ Key Questions
-- What percentage of patients missed their appointments?
-- Are age, gender, or neighborhood correlated with no-shows?
-- Do medical conditions like hypertension, diabetes, or alcoholism affect attendance?
-- Does receiving an SMS reminder improve the likelihood of showing up?
-- What impact does the waiting time between scheduling and appointment day have?
+## 3. KEY QUESTIONS
+- How many patients miss their appointments?
+- Does age affect whether a patient shows up or not?
+- Is there a difference in no-show rates between males and females?
+- Do patients with health conditions like diabetes or high blood pressure miss more appointments?
+- Does receiving financial help (Scholarship) affect attendance?
+- Does the number of days between booking and the appointment matter?
+- Do text message reminders help patients show up?
 
-## 🗂️ Data Collection and Processing
+## DATA COLLECTION AND PROCESSING
 The data was sourced from Kaggle: **[Medical Appointment No Shows](https://www.kaggle.com/datasets/joniarroba/noshowappointments)**.
 
 ### Columns Overview:
@@ -25,17 +27,19 @@ The data was sourced from Kaggle: **[Medical Appointment No Shows](https://www.k
 - `Age`: Patient age.
 - `Neighbourhood`: Location of the clinic.
 - `Scholarship`: Indicates enrollment in welfare programs.
-- `Hipertension`, `Diabetes`, `Alcoholism`, `Handcap`: Medical conditions.
+- `Hypertension`, `Diabetes`, `Alcoholism`, `Handcap`: Medical conditions.
 - `SMS_received`: Whether a reminder SMS was sent.
 - `No-show`: Whether the patient missed the appointment.
 
 ### Cleaning Steps:
+- Handling missing values
+- Removin duplicates
 - Parsed date columns and calculated waiting days.
 - Normalized column names (e.g., typo in `Handcap`).
 - Converted "No-show" values to boolean (`Yes` → 1, `No` → 0).
 - Removed invalid ages (e.g., negative values).
 
-## 📊 Exploratory Data Analysis (EDA)
+## 4. EXPLORATORY DATA ANALYSIS (EDA)
 - Analyzed distributions of age, gender, medical conditions, and SMS reminders.
 - Plotted no-show rates by demographic and medical factors.
 - Investigated temporal patterns (day of week, waiting time).
@@ -74,8 +78,4 @@ This analysis revealed several meaningful patterns in medical appointment behavi
 - **Tools Used:** Python, Pandas, Matplotlib, Seaborn, Jupyter Notebook
 - **File:** `KaggleV2-May-2016.csv`  
 - **Notebook:** `medical_no_show_analysis.ipynb`
-"""
-
-# Save the README.md
-with open("README.md", "w") as f:
-    f.write(readme_content)
+  
