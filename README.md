@@ -41,8 +41,9 @@ The data was sourced from Kaggle: **[Medical Appointment No Shows](https://www.k
 
 ## 5. EXPLORATORY DATA ANALYSIS (EDA)
 ### Age Distribution of Patients
-<img src="Age distribution.png" alt="Age distribution" width="850" height="600">
-#### The histogram of age distribution shows that most patients are younger, with a gradual decline in frequency as age increases. This suggests that younger individuals are more likely to seek medical appointments.
+<img src="Age distribution.png" alt="Age distribution" width="875" height="600">
+
+#### The histogram of age distribution shows that most patients are younger, with a 'radual decline in frequency as age increases. This suggests that younger individuals are more likely to seek medical appointments.
 
 - Analyzed distributions of age, gender, medical conditions, and SMS reminders.
 - Plotted no-show rates by demographic and medical factors.
