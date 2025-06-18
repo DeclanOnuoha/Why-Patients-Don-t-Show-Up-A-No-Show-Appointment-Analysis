@@ -52,8 +52,21 @@ The data was sourced from Kaggle: **[Medical Appointment No Shows](https://www.k
 
 #### Approximately 20% of patients did not show up for their appointments, indicating a significant no-show rate that could impact healthcare service efficiency.
 
+### Relationship between Age and No-show
 
+<img src="Age Vs No show.png" alt="Age Vs No show" width="875" height="600">
 
+#### The plot below illustrates the distribution of ages for patients who did and did not show up for their appointments. 
+#### The median age of patients who did not show up is slightly higher than those who did show up. There are some outliers in both categories, particularly among older patients who did not show up.
+
+### No-show rates between males and females
+
+<img src="No show by gender.png" alt="No show by gender" width="875" height="600">
+
+#### The plot below illustrates the distribution of no-shows categorized by gender.
+#### The majority of patients who showed up for their appointments are female, while a significant number of males also attended. Among those who did not show up, the proportion of females is slightly higher than that of males. The no-show rates are slightly higher for males compared to females, with around 20% of males and 19% of females not attending their appointments. ####
+
+### 
 - Analyzed distributions of age, gender, medical conditions, and SMS reminders.
 - Plotted no-show rates by demographic and medical factors.
 - Investigated temporal patterns (day of week, waiting time).
