@@ -1,4 +1,4 @@
-# Why Patients Don't Show-Up: A No-Show Appointment Diagnostic Analysis
+# Why Patients Don't Show-Up: A No-Show Appointment Analysis
 ![Picture of a doctor with a patient](hospital.jpg)
 ## 1. INTRODUCTION
 This project analyzes a real-world dataset originating from Brazil, which contains records of over 110,000 individual medical appointments. The dataset is designed to examine patient attendance behavior, specifically focusing on identifying the factors that influence whether or not a patient honors their scheduled medical appointment. Each record corresponds to a single appointment and includes a range of attributes that could potentially affect attendance outcomes. These features span both categorical and numerical types, such as patient age, gender, neighborhood, and the presence of underlying health conditions like hypertension, diabetes, and alcoholism. Additionally, the data captures whether the patient received a reminder via SMS and if they are enrolled in a social welfare program (scholarship).
@@ -41,17 +41,27 @@ The data was sourced from Kaggle: **[Medical Appointment No Shows](https://www.k
 
 ## 5. EXPLORATORY DATA ANALYSIS (EDA)
 ### Age Distribution of Patients
+
 <img src="Age distribution.png" alt="Age distribution" width="875" height="600">
 
 #### The histogram of age distribution shows that most patients are younger, with a 'radual decline in frequency as age increases. This suggests that younger individuals are more likely to seek medical appointments.
+
+### Distribution of the 'No-show
+
+<img src="N0 show distribution.png" alt="No show distribution" width="875" height="600">
+
+#### Approximately 20% of patients did not show up for their appointments, indicating a significant no-show rate that could impact healthcare service efficiency.
+
+
 
 - Analyzed distributions of age, gender, medical conditions, and SMS reminders.
 - Plotted no-show rates by demographic and medical factors.
 - Investigated temporal patterns (day of week, waiting time).
 - Grouped neighborhoods by highest/lowest no-show rates.
 
-## 🔍 Key Insights
+## 6. KEY INSIGHTS
 - **No-show rate** was approximately **20%**.
+  
 - **Shorter waiting time** between scheduling and appointment increased attendance.
 - **Receiving an SMS** slightly improved show-up probability.
 - Patients with **hypertension or diabetes** were **more likely** to show up.
