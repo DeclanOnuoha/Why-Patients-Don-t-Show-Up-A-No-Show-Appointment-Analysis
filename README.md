@@ -66,7 +66,23 @@ The data was sourced from Kaggle: **[Medical Appointment No Shows](https://www.k
 #### The plot below illustrates the distribution of no-shows categorized by gender.
 #### The majority of patients who showed up for their appointments are female, while a significant number of males also attended. Among those who did not show up, the proportion of females is slightly higher than that of males. The no-show rates are slightly higher for males compared to females, with around 20% of males and 19% of females not attending their appointments. ####
 
-### 
+### Impact of Health conditions on no show rates - diabetes and Hypertension
+<img src="diabetes no show.png" alt="diabetes no show " width="875" height="600">
+
+### Hypertension and No-Show
+
+<img src="No show by hypertension.png" alt="No show by hypertension" width="875" height="600">
+
+#### Patients with diabetes and hypertension have higher no-show rates compared to those without these conditions. This indicates that health status may influence appointment attendance.
+
+### Effect of receiving a scholarship on no-show rates
+
+<img src="scholarship no show.png" alt="scholarship no show" width="875" height="600">
+
+#### Patients who do not receive a scholarship have a higher no-show rate (approximately 20%) compared to those who do (around 24%). This suggests that financial support may play a role in appointment attendance.
+
+
+
 - Analyzed distributions of age, gender, medical conditions, and SMS reminders.
 - Plotted no-show rates by demographic and medical factors.
 - Investigated temporal patterns (day of week, waiting time).
@@ -74,10 +90,10 @@ The data was sourced from Kaggle: **[Medical Appointment No Shows](https://www.k
 
 ## 6. KEY INSIGHTS
 - **No-show rate** was approximately **20%**.
-  
+- Patients with **hypertension or diabetes** were **more likely** to show up.
+- Patients who do not receive a scholarship have a higher no-show rate (approximately 20%) compared to those who do (around 24%). This suggests that financial support may play a role in appointment attendance.
 - **Shorter waiting time** between scheduling and appointment increased attendance.
 - **Receiving an SMS** slightly improved show-up probability.
-- Patients with **hypertension or diabetes** were **more likely** to show up.
 - Some neighborhoods had significantly **higher no-show rates**, possibly due to socioeconomic differences.
 - **Younger patients** and those without chronic illnesses had higher no-show rates.
 
