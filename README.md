@@ -40,6 +40,11 @@ The data was sourced from Kaggle: **[Medical Appointment No Shows](https://www.k
 - Removed invalid ages (e.g., negative values).
 
 ## 5. EXPLORATORY DATA ANALYSIS (EDA)
+- Analyzed distributions of age, gender, medical conditions, and SMS reminders.
+- Plotted no-show rates by demographic and medical factors.
+- Investigated temporal patterns (day of week, waiting time).
+- Grouped neighborhoods by highest/lowest no-show rates.
+
 ### Age Distribution of Patients
 
 <img src="Age distribution.png" alt="Age distribution" width="875" height="600">
@@ -81,43 +86,49 @@ The data was sourced from Kaggle: **[Medical Appointment No Shows](https://www.k
 
 #### Patients who do not receive a scholarship have a higher no-show rate (approximately 20%) compared to those who do (around 24%). This suggests that financial support may play a role in appointment attendance.
 
+### Relationship between Neighborhood and No-show
+
+<img src="Neighbourhood.png" alt="Neighbourhood" width="875" height="600">
+
+#### Certain neighborhoods show higher no-show rates compared to others. This variation may indicate socioeconomic factors or accessibility issues affecting attendance in specific areas.
 
 
-- Analyzed distributions of age, gender, medical conditions, and SMS reminders.
-- Plotted no-show rates by demographic and medical factors.
-- Investigated temporal patterns (day of week, waiting time).
-- Grouped neighborhoods by highest/lowest no-show rates.
+### Impact of SMS reminders on no-show rates
+
+<img src="SMS by no show.png" alt="SMS by no show" width="875" height="600">
+
+#### The count plot indicates that patients who received SMS reminders had a significantly lower no-show rate compared to those who did not receive reminders. This suggests that sending text message reminders can be an effective strategy to improve appointment attendance.
 
 ## 6. KEY INSIGHTS
 - **No-show rate** was approximately **20%**.
 - Patients with **hypertension or diabetes** were **more likely** to show up.
 - Patients who do not receive a scholarship have a higher no-show rate (approximately 20%) compared to those who do (around 24%). This suggests that financial support may play a role in appointment attendance.
-- **Shorter waiting time** between scheduling and appointment increased attendance.
 - **Receiving an SMS** slightly improved show-up probability.
 - Some neighborhoods had significantly **higher no-show rates**, possibly due to socioeconomic differences.
+- **Shorter waiting time** between scheduling and appointment increased attendance.
 - **Younger patients** and those without chronic illnesses had higher no-show rates.
 
-## ⚠️ Limitations
+## 7. LIMITATION
 - No data on reasons for missing appointments (e.g., emergencies, transportation).
 - "No-show" column is labeled counter-intuitively (`No` = Showed up).
 - The dataset is limited to one region in Brazil and may not generalize globally.
 - Potential biases in data collection or unrecorded factors (e.g., weather, clinic capacity).
 
-## ✅ Recommendations
+## 8. RECOMMENDATIONS
 - **Automated SMS reminders** should be expanded, especially for high-risk groups.
 - Implement **confirmation systems** for long waiting times to reduce forgotten appointments.
 - Prioritize **education campaigns** in high no-show neighborhoods.
 - Consider **telemedicine or mobile health** options for patients with accessibility issues.
 
-## 🧾 Conclusion
+## 9. CONCLUSION
 This analysis revealed several meaningful patterns in medical appointment behavior. It shows that factors such as SMS reminders, waiting time, age, and medical history can influence attendance. These findings can guide interventions to reduce no-shows and improve healthcare delivery.
 
-## 🔄 Next Steps
+## 10. NEXT STEPS
 - Build a **predictive model** to identify patients at high risk of missing appointments.
 - Integrate external data (e.g., weather, public transport) for deeper analysis.
 - Collaborate with healthcare providers to implement and test recommendations.
 
-## 📎 Appendices
+## 11. APPENDICES
 - **Data Source:** [Kaggle Medical Appointment No Shows](https://www.kaggle.com/datasets/joniarroba/noshowappointments)
 - **Tools Used:** Python, Pandas, Matplotlib, Seaborn, Jupyter Notebook
 - **File:** `KaggleV2-May-2016.csv`  
